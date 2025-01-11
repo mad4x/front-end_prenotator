@@ -1,0 +1,15 @@
+.custom-title {
+    font-family: 'Courier New', monospace;
+    font-size: 4rem; /* Dimensione personalizzata */
+    font-weight: 800; /* Spessore */
+    letter-spacing: 1.5rem; /* Spaziatura tra lettere */
+}
+
+.button-style {
+    background-color: rgb(109, 44, 0);
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 400;
+    font-style: italic;
+    cursor: pointer;
+}
