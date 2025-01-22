@@ -1,0 +1,37 @@
+.custom-title {
+  font-family: 'Courier New', monospace;
+  font-size: medium; /* Dimensione personalizzata */
+  font-weight: 600; /* Spessore */
+  letter-spacing: 0.3rem; /* Spaziatura tra lettere */ 
+
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.navbar-color {
+  background-color: rgb(109, 44, 0);  
+}
+
+.table-color td {
+  background-color: rgb(255, 222, 130);
+   
+}
+
+.table-color th {
+  background-color: rgb(252, 209, 89)
+}
+
+.button-style {
+  background-color: rgb(109, 44, 0);
+  color: aliceblue;
+  width: 30%;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+  border: none;
+}
+
+.button-style:hover {
+  background-color: rgb(67, 27, 0);
+  color: aliceblue;
+}

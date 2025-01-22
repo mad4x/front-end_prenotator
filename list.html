@@ -3,17 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>prenotazioni</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
   rel="stylesheet" 
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
   crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/list.css">
 </head>
-<body>
+
+<body style="background-color: rgb(255, 176, 59);">
+
+  <div class="container-fluid navbar-color p-3">
+    <div class="row">
+      <div class="col-lg-4"><a href="/home.html" class="custom-title mx-3">prenotator</a></div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    
+    <div class="row">
+      <div class="col-lg-6">
+
+        <div class="input-group mb-3">
+          <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">filtra per</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" data-criteria="date">data</a></li>
+            <li><a class="dropdown-item" href="#" data-criteria="name">nome</a></li>
+          </ul>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="">
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <button id="search-button" type="submit" class="btn button-style">cerca</button>
+      </div>
+
+      <div class="col-lg-3">
+        <button id="list-all-button" type="submit" class="btn button-style w-75">guarda tutte</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container my-3">
+    <div id="loading" class="text-center text-muted">caricamento...</div>
+
+    <table id="booking-table" class="table table-color table-striped table-bordered border-dark d-none">
+
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Laboratorio</th>
+          <th scope="col">Data</th>
+          <th scope="col">Inizio</th>
+          <th scope="col">Fine</th>
+          <th scope="col">Archiviata</th>
+        </tr>
+      </thead>
+
+      <tbody id="booking-body" class="table-group-divider"></tbody>
+    </table>
+
+    <div id="no-data" class="text-center text-muted d-none">nessuna prenotazione trovata</div>
+  </div>
+
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/list.js"></script>
 </body>
 </html>
